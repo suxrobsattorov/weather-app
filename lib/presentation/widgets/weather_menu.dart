@@ -11,7 +11,7 @@ class WeatherMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 40),
+      padding: const EdgeInsets.only(top: 45),
       child: Row(
         children: [
           const SizedBox(width: 100),
@@ -20,6 +20,8 @@ class WeatherMenu extends StatelessWidget {
             width: MediaQuery.of(context).size.width - 200,
             height: 50,
             child: Container(
+              width: MediaQuery.of(context).size.width - 240,
+              height: 40,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 gradient: const LinearGradient(
@@ -34,12 +36,14 @@ class WeatherMenu extends StatelessWidget {
               ),
               child: const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text(
-                  'Weather',
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white,
+                child: Center(
+                  child: Text(
+                    'WEATHER',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
